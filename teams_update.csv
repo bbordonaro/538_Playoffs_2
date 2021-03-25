@@ -1,0 +1,31 @@
+TEAM_ID,ABBREVIATION,CITY,NICKNAME,TEAMNNAME,YEARFOUNDED,ARENA,ARENACAPACITY,OWNER,GENERALMANAGER,HEADCOACH,DLEAGUEAFFILIATION
+1610612737,ATL,Atlanta,Hawks,Atlanta Hawks,1949,State Farm Arena,18729,Tony Ressler,Travis Schlenk,Lloyd Pierce,Erie Bayhawks
+1610612738,BOS,Boston,Celtics,Boston Celtics,1946,TD Garden,18624,Wyc Grousbeck,Danny Ainge,Brad Stevens,Maine Red Claws
+1610612740,NOP,New Orleans,Pelicans,New Orleans Pelicans,2002,Smoothie King Center,16867,Tom Benson,Trajan Langdon,Alvin Gentry,NA
+1610612741,CHI,Chicago,Bulls,Chicago Bulls,1966,United Center,21711,Jerry Reinsdorf,Gar Forman,Jim Boylen,Windy City Bulls
+1610612742,DAL,Dallas,Mavericks,Dallas Mavericks,1980,American Airlines Center,19200,Mark Cuban,Donnie Nelson,Rick Carlisle,Texas Legends
+1610612743,DEN,Denver,Nuggets,Denver Nuggets,1976,Pepsi Center,19099,Stan Kroenke,Tim Connelly,Michael Malone,NA
+1610612745,HOU,Houston,Rockets,Houston Rockets,1967,Toyota Center,18104,Tilman Fertitta,Daryl Morey,Mike D'Antoni,Rio Grande Valley Vipers
+1610612746,LAC,Los Angeles,Clippers,Los Angeles Clippers,1970,Staples Center,19060,Steve Ballmer,Michael Winger,Doc Rivers,Agua Caliente Clippers of Ontario
+1610612747,LAL,Los Angeles,Lakers,Los Angeles Lakers,1948,Staples Center,19060,Jerry Buss Family Trust,Rob Pelinka,Frank Vogel,South Bay Lakers
+1610612748,MIA,Miami,Heat,Miami Heat,1988,AmericanAirlines Arena,19600,Micky Arison,Pat Riley,Erik Spoelstra,Sioux Falls Skyforce
+1610612749,MIL,Milwaukee,Bucks,Milwaukee Bucks,1968,Fiserv Forum,17500,Wesley Edens & Marc Lasry,Jon Horst,Mike Budenholzer,Wisconsin Herd
+1610612750,MIN,Minnesota,Timberwolves,Minnesota Timberwolves,1989,Target Center,19356,Glen Taylor,Scott Layden,Ryan Saunders,Iowa Wolves
+1610612751,BKN,Brooklyn,Nets,Brooklyn Nets,1976,Barclays Center,17732,Joe Tsai,Sean Marks,Kenny Atkinson,Long Island Nets
+1610612752,NYK,New York,Knicks,New York Knicks,1946,Madison Square Garden,19763,Cablevision (James Dolan),Steve Mills,David Fizdale,Westchester Knicks
+1610612753,ORL,Orlando,Magic,Orlando Magic,1989,Amway Center,18846,Rick DeVos,John Hammond,Steve Clifford,Lakeland Magic
+1610612754,IND,Indiana,Pacers,Indiana Pacers,1976,Bankers Life Fieldhouse,18345,Herb Simon,Kevin Pritchard,Nate McMillan,Fort Wayne Mad Ants
+1610612755,PHI,Philadelphia,76ers,Philadelphia 76ers,1949,Wells Fargo Center,20478,Joshua Harris,Elton Brand,Brett Brown,Delaware Blue Coats
+1610612756,PHX,Phoenix,Suns,Phoenix Suns,1968,Talking Stick Resort Arena,18422,Robert Sarver,James Jones,Monty Williams,Northern Arizona Suns
+1610612757,POR,Portland,Trail Blazers,Portland Trail Blazers,1970,Moda Center,19980,Paul Allen,Neil Olshey,Terry Stotts,NA
+1610612758,SAC,Sacramento,Kings,Sacramento Kings,1948,Golden 1 Center,17500,Vivek Ranadive,Vlade Divac,Luke Walton,Stockton Kings
+1610612759,SAS,San Antonio,Spurs,San Antonio Spurs,1976,AT&T Center,18694,Peter Holt,Brian Wright,Gregg Popovich,Austin Spurs
+1610612760,OKC,Oklahoma City,Thunder,Oklahoma City Thunder,1967,Chesapeake Energy Arena,19163,Clay Bennett,Sam Presti,Billy Donovan,Oklahoma City Blue
+1610612761,TOR,Toronto,Raptors,Toronto Raptors,1995,Scotiabank Arena,19800,Maple Leaf Sports and Entertainment,Masai Ujiri,Nick Nurse,Raptors 905
+1610612762,UTA,Utah,Jazz,Utah Jazz,1974,Vivint Smart Home Arena,20148,Greg Miller,Dennis Lindsey,Quin Snyder,Salt Lake City Stars
+1610612763,MEM,Memphis,Grizzlies,Memphis Grizzlies,1995,FedExForum,18119,Robert Pera,Zach Kleiman,Taylor Jenkins,Memphis Hustle
+1610612764,WAS,Washington,Wizards,Washington Wizards,1961,Capital One Arena,20647,Ted Leonsis,Tommy Sheppard,Scott Brooks,Capital City Go-Go
+1610612765,DET,Detroit,Pistons,Detroit Pistons,1948,Little Caesars Arena,21000,Tom Gores,Ed Stefanski,Dwane Casey,Grand Rapids Drive
+1610612766,CHA,Charlotte,Hornets,Charlotte Hornets,1988,Spectrum Center,19026,Michael Jordan,Mitch Kupchak,James Borrego,Greensboro Swarm
+1610612739,CLE,Cleveland,Cavaliers,Cleveland Cavaliers,1970,Quicken Loans Arena,20562,Dan Gilbert,Koby Altman,John Beilein,Canton Charge
+1610612744,GSW,Golden State,Warriors,Golden State Warriors,1946,Chase Center,19596,Joe Lacob,Bob Myers,Steve Kerr,Santa Cruz Warriors
