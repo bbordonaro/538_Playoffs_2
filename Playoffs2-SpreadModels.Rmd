@@ -1,0 +1,310 @@
+---
+title: "Playoffs 2 - SPREAD Prediction Models"
+author: "Janice Kim"
+date: "3/31/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(tibble)
+```
+
+```{r}
+games = read.csv("games_4_7.csv")
+summary(games)
+```
+##### Spread = Home Points−Away Points
+Use pace variable for these models
+
+## Prep Work: Creating Spread & Exploratory Analysis
+```{r, eval = FALSE}
+head(games)
+```
+Looking at histograms and plots of bwt versus each of the  explanatory variables. 
+```{r, eval = FALSE}
+games = games %>%
+  transform(SPREAD = PTS_home - PTS_away)
+
+names(games)
+```
+
+```{r}
+Y<- games$SPREAD
+X1 <- games$FG_PCT_home
+X2 <- games$FT_PCT_home
+X3 <- games$FG3_PCT_home
+X4 <- games$AST_home
+X5 <- games$REB_home
+X6 <- games$FG_PCT_away
+X7 <- games$FT_PCT_away
+X8 <- games$FG3_PCT_away
+X9 <- games$AST_away
+X10 <- games$REB_away
+X11 <- games$OREB_home
+X12 <- games$FGA_home
+X13 <- games$FGM_home
+X14 <- games$FG3A_home
+X15 <- games$FG3M_home
+X16 <- games$OREB_away
+X17 <- games$FGA_away
+X18 <- games$FGM_away
+X19 <- games$FG3A_away
+X20 <- games$FG3M_away
+X21 <- games$WSE_home
+X22 <- games$WSE_away
+X23 <- games$WSE_DIFF
+X24 <- games$SEASON_PACE_home
+X25 <- games$SEASON_PACE_away
+X26 <- games$SEASON_ORB._home
+X27 <- games$SEASON_ORB._away
+```
+
+```{r, eval = FALSE}
+full.lm = lm(Y~X1+X2+X3+X4+X5+X6+X7+X8+X9+X10+X11+X12+X13+X14+X15+X16+X17+X18+X19+X20+X21+X22+X23+X24+X25+X26+X27)
+summary(full.lm)
+```
+
+
+Conducted an ANOVA test to see if at least one of the coefficients is significantly different from zero.
+```{r, eval = F}
+anova(full.lm)
+```
+```
+Significantly large p-value indicates that it is not a good predictor for Y.
+Can remove X25 - X27
+
+Significantly low p-value indicates that these may be significantly different from zero.
+X1 - X24
+```
+
+## Method 1: Backward Elimination
+First wrote updated model without variables X25 - X27 and saw that the adjusted R2 value is the same as the full model, further proving that variables x25 - x27 are not useful in predicting spread.
+
+```{r}
+str(games$SPREAD)
+```
+
+```{r}
+summary(lm(games$SPREAD~X1+X2+X3+X4+X5+X6+X7+X8+X9+X10+X11+X12+X13+X14+X15+X16+X17+X18+X19+X20+X21+X22+X23+X24)) #0.8453 
+```
+```
+Next, set the significance at alpha = 0.05 and deleted variables with the highest p-value above a until all predictor variables hve p value under 0.05.
+
+Variable X1 has the greatest p-value at 0.91492 so we will run a model without variable X1.
+```
+
+```{r}
+summary(lm(Y~X2+X3+X4+X5+X6+X7+X8+X9+X10+X11+X12+X13+X14+X15+X16+X17+X18+X19+X20+X21+X22+X23+X24))
+```
+
+```
+X3 has the greatest p-value above alpha at 0.9651 so remove X3.
+```
+
+```{r}
+summary(lm(Y~X2+X4+X5+X6+X7+X8+X9+X10+X11+X12+X13+X14+X15+X16+X17+X18+X19+X20+X21+X22+X23+X24))
+```
+```
+Remove X21 at 0.59985 
+```
+
+```{r}
+summary(lm(Y~X2+X4+X5+X6+X7+X8+X9+X10+X11+X12+X13+X14+X15+X16+X17+X18+X19+X20+X22+X23+X24))
+```
+```
+Remove X4 with p-value 0.43779
+```
+
+```{r}
+summary(lm(Y~X2+X5+X6+X7+X8+X9+X10+X11+X12+X13+X14+X15+X16+X17+X18+X19+X20+X22+X23+X24))
+```
+```
+Remove X23 with p-value of 0.61426
+```
+
+```{r}
+summary(lm(Y~X2+X5+X6+X7+X8+X9+X10+X11+X12+X13+X14+X15+X16+X17+X18+X19+X20+X22+X24))
+```
+```
+Remove X14 with p-value of 0.486484
+```
+
+```{r}
+summary(lm(Y~X2+X5+X6+X7+X8+X9+X10+X11+X12+X13+X14+X15+X16+X17+X18+X19+X20+X22+X24))
+```
+```
+Remove X14 with p-value of 0.486484 
+```
+
+```{r}
+summary(lm(Y~X2+X5+X6+X7+X8+X9+X10+X11+X12+X13+X15+X16+X17+X18+X19+X20+X22+X24))
+```
+```
+Remove X8 with a p-value of 0.441259.
+```
+
+```{r}
+summary(lm(Y~X2+X5+X6+X7+X9+X10+X11+X12+X13+X15+X16+X17+X18+X19+X20+X22+X24))
+```
+```
+Remove X22 with a p-value of 0.441259.
+```
+
+```{r}
+summary(lm(Y~X2+X5+X6+X7+X9+X10+X11+X12+X13+X15+X16+X17+X18+X19+X20+X24))
+```
+```
+Remove X9, which has a p-value of 0.168817
+```
+
+```{r}
+summary(lm(Y~X2+X5+X6+X7+X10+X11+X12+X13+X15+X16+X17+X18+X19+X20+X24))
+```
+```
+Remove X19 with a p-value of 0.061562
+```
+
+```{r}
+summary(lm(Y~X2+X5+X6+X7+X10+X11+X12+X13+X15+X16+X17+X18+X20+X24))
+```
+```
+Remove X6
+```
+
+```{r}
+summary(lm(Y~X2+X5+X7+X10+X11+X12+X13+X15+X16+X17+X18+X20+X24))
+```
+
+Then we need to look at the adjusted R-squared. A higher adjusted R-squared indicates that the predictor variables add predictive value. 
+
+```
+From looking at the adjusted R-squared values of the different predictive models, it can be determined that a 13-variable model is least favorable, with an adjusted R-squared of 0.8452. 
+The best model is a 16-variable model, which had an adjusted R-squared value of 0.8454.
+
+Our 16-variable model is as follows:
+```
+
+```{r}
+final.lm = lm(Y~X2+X5+X7+X10+X11+X12+X13+X15+X16+X17+X18+X20+X24)
+```
+```
+The variables in this model to predict Y (aka Spread) are:
+X2:FT_PCT_home
+X5:REB_home
+X7:FT_PCT_away
+X10:REB_away
+X11:OREB_home
+X12:FGA_home
+X13:FGM_home
+X15:FG3M_home
+X16:OREB_away
+X17:FGA_away
+X18:FGM_away
+X20:FG3M_away
+X24:SEASON_PACE_home
+```
+
+
+## Method 2: Using RegSubsets
+
+```{r}
+library("leaps")
+
+model_sel <- regsubsets(SPREAD~FG_PCT_home+FT_PCT_home+FG3_PCT_home+AST_home+REB_home+FG_PCT_away+FT_PCT_away+FG3_PCT_away+AST_away+REB_away+OREB_home+FGA_home+FGM_home+FG3A_home+FG3M_home+OREB_away+FGA_away+FGM_away+FG3A_away+FG3M_away+SEASON_PACE_home, data = games, nbest = 1, nvmax = 13, method = "backward")
+
+plot(model_sel, scale="adjr2")
+```
+```
+FT_PCT_home
+REB_home
+FT_PCT_away
+REB_away
+OREB_home
+FGA_home
+FGM_home
+FG3M_home
+OREB_away
+FGA_away
+FGM_away
+FG3M_away
+SEASON_PACE_home
+```
+
+
+```{r}
+plot(model_sel, scale="bic")
+```
+```
+From the model selection based on adjusted R-squared and BIC, we can see that the best 16-variable models uses the same variables as the one we found via backwards elimination.
+```
+
+```{r}
+summary(final.lm)
+```
+```
+Note that the adjusted r-squared dropped by 0.0001. Is it worth testing for collinearity?
+```
+
+
+## Method 3: Cross Validation
+
+What is the purpose of cross validation?
+```
+Cross validation alllows you to test your model on the sample before finalizing it.
+```
+
+```{r}
+install.packages("caret")
+library(caret)
+```
+
+
+```{r}
+sample.size = floor(0.8*nrow(games))
+sample.size
+
+set.seed(101)
+
+sample = sample.int(n =nrow(games), size = floor(0.8*nrow(games)), replace = F)
+train = games[sample, ]
+test = games[-sample, ]
+```
+
+
+
+```{r}
+ctrl = trainControl(method = "cv", number = 10)
+
+model = train(SPREAD~FT_PCT_home+REB_home+FT_PCT_away+REB_away+OREB_home+FGA_home+FGM_home+FG3M_home+OREB_away+FGA_away+FGM_away+FG3M_away+SEASON_PACE_home,data = games, method = "lm", trControl = ctrl)
+
+print(model)
+```
+
+```
+RMSE = 5.5185
+Rsquared = 0.8453
+MAE = 4.4075
+
+The lower the RMSE and MAE and the higher Rsquared, the more closely a model can predict the actual observations.
+```
+
+```{r}
+model$finalModel
+```
+
+```
+SPREAD = 20.112*FCT_PCT_home - 0.072*REB_home - 19.5*80FT_PCT_away + 0.084*REB_away + 0.710*OREB_home - 0.598*FGA_home + 1.882*FGM_home + 0.844*FG3M_home - 0.726*OREB_away + 0.5875*FGA_away - 1.876*FGM_away - 0.84*FG3M_away - 0.108*SEASON_PACE_home + 10.975
+```
+
+```{r}
+#testing the model with the test dataset
+test
+```
+```{r}
+#For game 3...
+game3.SPREAD = (20.11*0.371) - (0.072*45) - (19.58*0.629) + (0.084*48) + (0.71*20) - (0.598*105) + (1.882*39) + (0.844*11) - (0.726*9) + (0.5875*75) - (1.876*40) - (0.84*31) - (0.108*98.9) + 10.975
+game3.SPREAD
+```
+
