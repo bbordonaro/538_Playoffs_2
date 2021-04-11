@@ -1,0 +1,168 @@
+"","DATE","Home.Team","Away.Team","Spread","Total","OREB"
+"1","4/10/2021","Brooklyn Nets","Los Angeles Lakers",NA,NA,19.1091000993105
+"2","4/10/2021","Oklahoma City Thunder","Philadelphia 76ers",NA,NA,21.2107664106182
+"3","4/10/2021","Utah Jazz","Sacramento Kings",NA,NA,16.6977155312988
+"4","4/10/2021","Golden State Warriors","Houston Rockets",NA,NA,21.2107664106182
+"5","4/10/2021","Phoenix Suns","Washington Wizards",NA,NA,18.5242902693622
+"6","4/10/2021","Portland Trail Blazers","Detroit Pistons",NA,NA,20.0055130403526
+"7","4/11/2021","Charlotte Hornets","Atlanta Hawks",NA,NA,20.8735266569285
+"8","4/11/2021","Denver Nuggets","Boston Celtics",NA,NA,18.8484142983833
+"9","4/11/2021","Cleveland Cavaliers","New Orleans Pelicans",NA,NA,18.2863818652854
+"10","4/11/2021","Orlando Magic","Milwaukee Bucks",NA,NA,20.9584445414238
+"11","4/11/2021","New York Knicks","Toronto Raptors",NA,NA,19.0787322738701
+"12","4/11/2021","Dallas Mavericks","San Antonio Spurs",NA,NA,17.3305647908982
+"13","4/11/2021","Memphis Grizzlies","Indiana Pacers",NA,NA,17.853745784848
+"14","4/11/2021","Minnesota Timberwolves","Chicago Bulls",NA,NA,16.9008142837768
+"15","4/11/2021","Los Angeles Clippers","Detroit Pistons",NA,NA,15.3588721554663
+"16","4/11/2021","Portland Trail Blazers","Miami Heat",NA,NA,18.3656011618048
+"17","4/12/2021","New York Knicks","Los Angeles Lakers",NA,NA,22.3195580791983
+"18","4/12/2021","Orlando Magic","San Antonio Spurs",NA,NA,21.2943047954067
+"19","4/12/2021","Minnesota Timberwolves","Brooklyn Nets",NA,NA,18.2875757890682
+"20","4/12/2021","Dallas Mavericks","Philadelphia 76ers",NA,NA,19.1574214563368
+"21","4/12/2021","Memphis Grizzlies","Chicago Bulls",NA,NA,20.2592684245001
+"22","4/12/2021","New Orleans Pelicans","Sacramento Kings",NA,NA,19.1574214563368
+"23","4/12/2021","Utah Jazz","Washington Wizards",NA,NA,21.7857680958755
+"24","4/12/2021","Golden State Warriors","Denver Nuggets",NA,NA,20.2029435220007
+"25","4/12/2021","Phoenix Suns","Houston Rockets",NA,NA,17.0408068991391
+"26","4/13/2021","Indiana Pacers","Los Angeles Clippers",NA,NA,15.6898926426813
+"27","4/13/2021","Toronto Raptors","Atlanta Hawks",NA,NA,17.712903360181
+"28","4/13/2021","Charlotte Hornets","Los Angeles Lakers",NA,NA,17.0965600393887
+"29","4/13/2021","Utah Jazz","Oklahoma City Thunder",NA,NA,22.3761275135555
+"30","4/13/2021","Phoenix Suns","Miami Heat",NA,NA,19.8186839280222
+"31","4/13/2021","Portland Trail Blazers","Boston Celtics",NA,NA,21.8437962865674
+"32","4/14/2021","Charlotte Hornets","Cleveland Cavaliers",NA,NA,18.9527719524918
+"33","4/14/2021","Philadelphia 76ers","Brooklyn Nets",NA,NA,20.5568371586945
+"34","4/14/2021","Toronto Raptors","San Antonio Spurs",NA,NA,16.2781616998346
+"35","4/14/2021","Detroit Pistons","Los Angeles Clippers",NA,NA,17.7439410270541
+"36","4/14/2021","Chicago Bulls","Orlando Magic",NA,NA,18.59963235287
+"37","4/14/2021","Minnesota Timberwolves","Milwaukee Bucks",NA,NA,20.0551410314765
+"38","4/14/2021","New Orleans Pelicans","New York Knicks",NA,NA,19.4620797529298
+"39","4/14/2021","Houston Rockets","Indiana Pacers",NA,NA,17.0317450604853
+"40","4/14/2021","Oklahoma City Thunder","Golden State Warriors",NA,NA,19.4620797529298
+"41","44300","Memphis Grizzlies","Dallas Mavericks",NA,NA,16.2344983948175
+"42","44300","Denver Nuggets","Miami Heat",NA,NA,19.0087446549646
+"43","44300","Sacramento Kings","Washington Wizards",NA,NA,17.9626508270509
+"44","44301","Atlanta Hawks","Milwaukee Bucks",NA,NA,19.9793389914071
+"45","44301","Cleveland Cavaliers","Golden State Warriors",NA,NA,18.9673679983552
+"46","44301","Los Angeles Lakers","Boston Celtics",NA,NA,16.5831585473094
+"47","44301","Phoenix Suns","Sacramento Kings",NA,NA,17.9626508270509
+"48","44302","Utah Jazz","Indiana Pacers",NA,NA,19.7305388406546
+"49","44302","Detroit Pistons","Oklahoma City Thunder",NA,NA,19.4758545352139
+"50","44302","Philadelphia 76ers","Los Angeles Clippers",NA,NA,22.3588854801932
+"51","44302","Washington Wizards","New Orleans Pelicans",NA,NA,20.9317091319587
+"52","44302","Brooklyn Nets","Charlotte Hornets",NA,NA,21.1149265874329
+"53","44302","Toronto Raptors","Orlando Magic",NA,NA,19.7802177129882
+"54","44302","Chicago Bulls","Memphis Grizzlies",NA,NA,20.1816069918281
+"55","44302","Houston Rockets","Denver Nuggets",NA,NA,18.9977920348782
+"56","44302","Minnesota Timberwolves","Miami Heat",NA,NA,16.9066481297003
+"57","44302","San Antonio Spurs","Portland Trail Blazers",NA,NA,20.1816069918281
+"58","44302","Dallas Mavericks","New York Knicks",NA,NA,21.9739714614217
+"59","44303","Los Angeles Lakers","Utah Jazz",NA,NA,19.8283398970034
+"60","44303","Washington Wizards","Detroit Pistons",NA,NA,23.7517203375049
+"61","44303","Chicago Bulls","Cleveland Cavaliers",NA,NA,21.065244196249
+"62","44303","Boston Celtics","Golden State Warriors",NA,NA,22.1921432847874
+"63","44303","Milwaukee Bucks","Memphis Grizzlies",NA,NA,24.909667432325
+"64","44303","Phoenix Suns","San Antonio Spurs",NA,NA,19.1114699893619
+"65","44304","Atlanta Hawks","Indiana Pacers",NA,NA,18.5350756754679
+"66","44304","New York Knicks","New Orleans Pelicans",NA,NA,22.7899949788946
+"67","44304","Miami Heat","Brooklyn Nets",NA,NA,19.1502370372958
+"68","44304","Charlotte Hornets","Portland Trail Blazers",NA,NA,18.3578866287111
+"69","44304","Orlando Magic","Houston Rockets",NA,NA,20.7893090895148
+"70","44304","Toronto Raptors","Oklahoma City Thunder",NA,NA,15.6635672886806
+"71","44304","Dallas Mavericks","Sacramento Kings",NA,NA,16.131359752946
+"72","44304","Los Angeles Clippers","Minnesota Timberwolves",NA,NA,16.4805642465703
+"73","44305","Detroit Pistons","Cleveland Cavaliers",NA,NA,17.9284883777927
+"74","44305","Boston Celtics","Chicago Bulls",NA,NA,17.2453860228235
+"75","44305","Philadelphia 76ers","Golden State Warriors",NA,NA,21.146725127311
+"76","44305","Indiana Pacers","San Antonio Spurs",NA,NA,21.146725127311
+"77","44305","Miami Heat","Houston Rockets",NA,NA,20.5687923960787
+"78","44305","Washington Wizards","Oklahoma City Thunder",NA,NA,18.0167078483168
+"79","44305","Milwaukee Bucks","Phoenix Suns",NA,NA,19.8432825863802
+"80","44305","Denver Nuggets","Memphis Grizzlies",NA,NA,20.9077321823924
+"81","44305","Los Angeles Lakers","Utah Jazz",NA,NA,18.497776437506
+"82","44306","Atlanta Hawks","Orlando Magic",NA,NA,20.0997809732162
+"83","44306","New York Knicks","Charlotte Hornets",NA,NA,15.0423080450743
+"84","44306","New Orleans Pelicans","Brooklyn Nets",NA,NA,15.6676726230328
+"85","44306","Portland Trail Blazers","Los Angeles Clippers",NA,NA,18.2548174146759
+"86","44306","Sacramento Kings","Minnesota Timberwolves",NA,NA,18.2548174146759
+"87","44307","Cleveland Cavaliers","Chicago Bulls",NA,NA,18.299938241588
+"88","44307","Indiana Pacers","Oklahoma City Thunder",NA,NA,16.7306634197246
+"89","44307","Philadelphia 76ers","Phoenix Suns",NA,NA,19.4048548970915
+"90","44307","Toronto Raptors","Brooklyn Nets",NA,NA,19.4048548970915
+"91","44307","Washington Wizards","Golden State Warriors",NA,NA,25.3519739479045
+"92","44307","New York Knicks","Atlanta Hawks",NA,NA,23.5070103893642
+"93","44307","Houston Rockets","Utah Jazz",NA,NA,25.129036934608
+"94","44307","Dallas Mavericks","Detroit Pistons",NA,NA,21.481898030819
+"95","44307","San Antonio Spurs","Miami Heat",NA,NA,23.0273706233004
+"96","44307","Los Angeles Clippers","Memphis Grizzlies",NA,NA,26.2869840294281
+"97","44307","Portland Trail Blazers","Denver Nuggets",NA,NA,17.0762674765094
+"98","44307","Sacramento Kings","Minnesota Timberwolves",NA,NA,21.5083758266928
+"99","44308","Boston Celtics","Phoenix Suns",NA,NA,19.3977381295448
+"100","44308","Orlando Magic","New Orleans Pelicans",NA,NA,18.5420468037289
+"101","44308","Milwaukee Bucks","Philadelphia 76ers",NA,NA,19.5076899373131
+"102","44308","San Antonio Spurs","Detroit Pistons",NA,NA,20.6010168205646
+"103","44308","Chicago Bulls","Charlotte Hornets",NA,NA,16.648931041534
+"104","44308","Dallas Mavericks","Los Angeles Lakers",NA,NA,19.597698143139
+"105","44309","Atlanta Hawks","Miami Heat",NA,NA,20.1095535200958
+"106","44309","Brooklyn Nets","Boston Celtics",NA,NA,20.0451114856318
+"107","44309","Charlotte Hornets","Cleveland Cavaliers",NA,NA,18.6447666420678
+"108","44309","Houston Rockets","Los Angeles Clippers",NA,NA,16.648931041534
+"109","44309","Oklahoma City Thunder","Washington Wizards",NA,NA,19.5127802586437
+"110","44309","Golden State Warriors","Denver Nuggets",NA,NA,20.4700348093702
+"111","44309","Portland Trail Blazers","Memphis Grizzlies",NA,NA,17.912591223837
+"112","44310","New York Knicks","Toronto Raptors",NA,NA,18.6507444545092
+"113","44310","Milwaukee Bucks","Philadelphia 76ers",NA,NA,21.1275381223809
+"114","44310","Indiana Pacers","Detroit Pistons",NA,NA,18.5225591113349
+"115","44310","Miami Heat","Chicago Bulls",NA,NA,22.2673997079246
+"116","44310","New Orleans Pelicans","San Antonio Spurs",NA,NA,19.1479236892933
+"117","44310","Dallas Mavericks","Los Angeles Lakers",NA,NA,20.6706188849243
+"118","44310","Utah Jazz","Minnesota Timberwolves",NA,NA,22.3318417423886
+"119","44310","Denver Nuggets","Houston Rockets",NA,NA,23.3570950261803
+"120","44311","Charlotte Hornets","Boston Celtics",NA,NA,19.6525824630591
+"121","44311","Brooklyn Nets","Phoenix Suns",NA,NA,16.539233542593
+"122","44311","Portland Trail Blazers","Memphis Grizzlies",NA,NA,18.6492637856335
+"123","44311","Washington Wizards","Cleveland Cavaliers",NA,NA,20.4093094596784
+"124","44311","Atlanta Hawks","Milwaukee Bucks",NA,NA,16.7695515180797
+"125","44311","Orlando Magic","Indiana Pacers",NA,NA,19.6525824630591
+"126","44311","Golden State Warriors","Sacramento Kings",NA,NA,18.4086235702987
+"127","44312","Detroit Pistons","Atlanta Hawks",NA,NA,16.5146908019262
+"128","44312","Orlando Magic","Los Angeles Lakers",NA,NA,14.4235468967482
+"129","44312","Philadelphia 76ers","Oklahoma City Thunder",NA,NA,17.156416500286
+"130","44312","Washington Wizards","San Antonio Spurs",NA,NA,17.4803339355103
+"131","44312","New York Knicks","Phoenix Suns",NA,NA,15.0489114747066
+"132","44312","Toronto Raptors","Cleveland Cavaliers",NA,NA,20.4160299064136
+"133","44312","Miami Heat","Chicago Bulls",NA,NA,16.3490971384769
+"134","44312","Minnesota Timberwolves","Utah Jazz",NA,NA,22.5115654587992
+"135","44312","New Orleans Pelicans","Los Angeles Clippers",NA,NA,20.9647590289047
+"136","44312","Denver Nuggets","Memphis Grizzlies",NA,NA,22.0108528568184
+"137","44312","Sacramento Kings","Dallas Mavericks",NA,NA,21.969476200209
+"138","44313","Boston Celtics","Oklahoma City Thunder",NA,NA,22.2933936354334
+"139","44313","Charlotte Hornets","Milwaukee Bucks",NA,NA,20.9647590289047
+"140","44313","Indiana Pacers","Portland Trail Blazers",NA,NA,20.6155545352805
+"141","44313","Toronto Raptors","Brooklyn Nets",NA,NA,18.8233446712502
+"142","44313","Houston Rockets","Minnesota Timberwolves",NA,NA,23.9046722065718
+"143","44313","Golden State Warriors","Dallas Mavericks",NA,NA,20.7857587801943
+"144","44314","Cleveland Cavaliers","Orlando Magic",NA,NA,18.8233446712502
+"145","44314","Philadelphia 76ers","Atlanta Hawks",NA,NA,19.8377394386351
+"146","44314","Washington Wizards","Los Angeles Lakers",NA,NA,20.5964253984556
+"147","44314","Boston Celtics","Charlotte Hornets",NA,NA,19.2425037335271
+"148","44314","New York Knicks","Chicago Bulls",NA,NA,18.6661094196331
+"149","44314","Miami Heat","San Antonio Spurs",NA,NA,23.3282986298124
+"150","44314","Memphis Grizzlies","Portland Trail Blazers",NA,NA,19.3490377338159
+"151","44314","Denver Nuggets","New Orleans Pelicans",NA,NA,19.6529172762483
+"152","44314","Phoenix Suns","Los Angeles Clippers",NA,NA,20.6999519902737
+"153","44314","Sacramento Kings","Utah Jazz",NA,NA,24.0850256264317
+"154","44315","Detroit Pistons","Dallas Mavericks",NA,NA,20.445267684833
+"155","44315","Indiana Pacers","Brooklyn Nets",NA,NA,24.0850256264317
+"156","44315","Houston Rockets","Milwaukee Bucks",NA,NA,15.7048917494716
+"157","44315","Minnesota Timberwolves","Golden State Warriors",NA,NA,16.9417960487171
+"158","44315","Oklahoma City Thunder","New Orleans Pelicans",NA,NA,16.7192865168564
+"159","44315","Denver Nuggets","Toronto Raptors",NA,NA,16.8848801803057
+"160","44316","Philadelphia 76ers","Atlanta Hawks",NA,NA,16.2114512616709
+"161","44316","Boston Celtics","San Antonio Spurs",NA,NA,19.1134896348541
+"162","44316","Cleveland Cavaliers","Washington Wizards",NA,NA,21.2503729739239
+"163","44316","Brooklyn Nets","Portland Trail Blazers",NA,NA,18.8588053294134
+"164","44316","Memphis Grizzlies","Orlando Magic",NA,NA,18.8200382814794
+"165","44316","Chicago Bulls","Milwaukee Bucks",NA,NA,18.0664549208287
+"166","44316","Phoenix Suns","Utah Jazz",NA,NA,21.1859309394599
+"167","44316","Los Angeles Lakers","Sacramento Kings",NA,NA,18.6284873539266

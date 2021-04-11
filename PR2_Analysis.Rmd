@@ -1,0 +1,82 @@
+---
+title: "playoff2_Analysis"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+gamesData <- read.csv("C:/Users/Advaith/Desktop/STOR 538/PlayoffRound2/games_4_7.csv")
+teamsData <- read.csv("C:/Users/Advaith/Desktop/STOR 538/PlayoffRound2/teams_update.csv")
+predictions <- read.csv("C:/Users/Advaith/Desktop/STOR 538/PlayoffRound2/Predictions.csv")
+
+```
+
+```{r}
+library(dplyr)
+library(tidyverse)
+
+#adding DREB column
+gamesData <- gamesData %>% mutate(DREB_home = REB_home - OREB_home, DREB_away = REB_away - OREB_away, OREB = OREB_away + OREB_home)
+```
+
+```{r}
+library(caret)
+library(leaps)
+library(MASS)
+
+set.seed(123)
+split_dummy <- sample(c(rep(0, .85 * nrow(gamesData)), rep(1, .15 * nrow(gamesData))))
+train.data = gamesData[split_dummy == 0, ]
+test.data = gamesData[split_dummy == 1, ]
+
+```
+
+```{r}
+
+intercept_only <- lm(OREB ~ 1, data=train.data)
+
+all <- lm(OREB ~ PTS_away + FG_PCT_away + FT_PCT_away + FG3_PCT_away + AST_away + HOME_TEAM_WINS + FGA_away + FGM_away + FG3A_away + FG3M_away + SEASON_PACE_away + SEASON_ORB._away + PTS_home + FG_PCT_home + FT_PCT_home + FG3_PCT_home + AST_home + HOME_TEAM_WINS + FGA_home + FGM_home + FG3A_home + FG3M_home + SEASON_PACE_home + SEASON_ORB._home + DREB_home + DREB_away, 
+          data=train.data)
+
+backwardhome <- step(all, direction = "backward", scope = formula(all), trace = 0)
+backwardhome$anova
+backwardhome$coefficients
+
+```
+
+```{r}
+ctrl = trainControl(method = "cv", number = 10)
+
+trainer <- train(OREB ~ PTS_away + FT_PCT_away + FG3_PCT_away + AST_away + FGA_away + FGM_away + FG3A_away + SEASON_PACE_away + SEASON_ORB._away + PTS_home + FT_PCT_home + FG3_PCT_home + AST_home + FGA_home + FGM_home + FG3A_home + DREB_home + DREB_away,
+                    data = test.data, 
+                    method = "lm", 
+                    trControl = ctrl)
+print(trainer)
+```
+
+```{r}
+away21 <- read.csv("C:/Users/Advaith/Desktop/STOR 538/PlayoffRound2/away_2021.csv") %>% rename(TEAM_away = TEAM_AWAY)
+home21 <- read.csv("C:/Users/Advaith/Desktop/STOR 538/PlayoffRound2/home_2021.csv") %>% rename(TEAM_home = TEAM_HOME)
+
+x_for_pred <- read.csv("C:/Users/Advaith/Desktop/STOR 538/PlayoffRound2/x_for_pred.csv") %>% 
+  mutate(DREB_away = REB_away - OREB_away, DREB_home = REB_home - OREB_home) %>% 
+  add_column(OREB = NA)
+
+x_for_pred <- merge(x_for_pred, away21, by = "TEAM_away")
+x_for_pred <- merge(x_for_pred, home21, by = "TEAM_home")
+x_for_pred <- x_for_pred %>% rename(PTS_away = PTS_AWAY, FG_away = FG._AWAY, FGA_away = FGA_AWAY, FGM_away = FGM_AWAY, FG3A_away = X3PA_AWAY, SEASON_ORB._away = SEASON_ORB._AWAY, PTS_home = PTS_HOME, FGA_home = FGA_HOME, FGM_home = FGM_HOME, FG3A_home = X3PA_HOME)
+
+
+final.model <- lm(OREB ~ PTS_away + FT_PCT_away + FG3_PCT_away + AST_away + FGA_away + FGM_away + FG3A_away + SEASON_PACE_away + SEASON_ORB._away + PTS_home + FT_PCT_home + FG3_PCT_home + AST_home + FGA_home + FGM_home + FG3A_home + DREB_home + DREB_away, data=gamesData)
+
+OREBS <- predict(final.model, x_for_pred)
+predictions["OREB"] = OREBS
+```
+
+```{r}
+write.csv(predictions, "C:/Users/Advaith/Desktop/STOR 538/PlayoffRound2/predictions_OREB.csv")
+```
+
